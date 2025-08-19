@@ -58,7 +58,7 @@ h2 {
 }
 
 .card-content > p {
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 500;
   color: var(--gray-600);
   line-height: 1.6;
@@ -86,6 +86,11 @@ h2 {
   color: var(--blue-950);
   margin-bottom: 0.2rem;
 }
+.plan-price {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--gray-600);
+}
 
 .card-plan > a {
   color: var(--blue-700);
@@ -109,6 +114,7 @@ button[type="submit"] {
   font-size: 1rem;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
   border: none;
+  cursor: pointer;
 }
 button[type="button"] {
   background-color: white;
@@ -116,9 +122,55 @@ button[type="button"] {
   color: var(--blue-950);
   font-weight: 700;
   font-size: 1rem;
+  cursor: pointer;
 }
 
-button:hover {
-  cursor: pointer;
-  color: var(--blue-500);
+@media (max-width: 500px) {
+  body {
+    background: url("./images/pattern-background-mobile.svg") no-repeat top
+      center/contain;
+    background-color: var(--blue-100);
+  }
+  .card > img {
+    width: 320px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card-content {
+    width: 320px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2.5rem;
+  }
+  .card-content > p {
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .card-plan {
+    padding: 0.7rem;
+  }
+
+  .card-plan > a {
+    font-size: 0.8rem;
+  }
+  .plan-name {
+    font-size: 0.7rem;
+  }
+  .plan-price {
+    font-size: 0.7rem;
+  }
+  .plan-details > img {
+    width: 2rem;
+  }
+  button[type="submit"] {
+    padding: 0.7rem;
+    font-size: 0.7rem;
+  }
+  button[type="button"] {
+    font-size: 0.7rem;
+  }
 }
