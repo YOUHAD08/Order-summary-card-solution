@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL]([https://your-live-site-url.com](https://youhad08.github.io/Order-summary-card-solution/))
 
 ## My process
 
