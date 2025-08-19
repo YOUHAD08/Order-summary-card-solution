@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --blue-100: hsl(225, 100%, 94%);
+  --blue-700: hsl(245, 75%, 52%);
+
+  --blue-50: hsl(225, 100%, 98%);
+  --gray-600: hsl(224, 23%, 55%);
+  --blue-950: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: url("./images/pattern-background-desktop.svg") no-repeat top
+    center/contain;
+  background-color: var(--blue-100);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card > img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 450px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 3rem;
+  gap: 2rem;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--blue-950);
+}
+
+.card-content > p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+.card-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blue-50);
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+.plan-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-name {
+  font-weight: 900;
+  font-size: 1rem;
+  color: var(--blue-950);
+  margin-bottom: 0.2rem;
+}
+
+.card-plan > a {
+  color: var(--blue-700);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+button[type="submit"] {
+  background-color: var(--blue-700);
+  width: 100%;
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: var(--blue-700);
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+button[type="button"] {
+  background-color: white;
+  border: none;
+  color: var(--blue-950);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--blue-500);
+}
