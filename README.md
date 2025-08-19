@@ -32,11 +32,11 @@ Users should be able to:
 
 #### Desktop view
 
-![](design\desktop-design.jpg)
+![](design/desktop-design.jpg)
 
 #### Mobile view
 
-![](design\mobile-design.jpg)
+![](design/mobile-design.jpg)
 
 ### Links
 
